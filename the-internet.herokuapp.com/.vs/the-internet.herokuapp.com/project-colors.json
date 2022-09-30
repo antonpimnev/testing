@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bf00ec77-f951-4891-9177-60b018cb39ac": {
+      "ProjectGuid": "bf00ec77-f951-4891-9177-60b018cb39ac",
+      "DisplayName": "the-internet.herokuapp.com",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
