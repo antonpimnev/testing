@@ -13,16 +13,15 @@ namespace the_internet.herokuapp.com
         internal IWebDriver driver;
 
         //Локаторы
-        protected readonly By _signInButton = By.XPath("//a[text()='Вход']");
-        protected readonly string _siteUrl = string.Empty;
+        //protected readonly By _signInButton = By.XPath("//a[text()='Вход']");
+        protected readonly string _siteUrl = "http://the-internet.herokuapp.com";
 
         //Константы
-        internal const string _correspondencePageUrl = "/Correspondence/Index";
+        //SiteUrl = "https://testing-i.cascadepro.online:8443"
+        //internal const string _abPageUrl = "/Correspondence/Index";
 
         //вынести лучше в отдельный файл
         private const string _passInputQ = "1Qwerty!";
-        internal const string _sedPageUrl = "/Ticket/Index";
-        internal const string _futureDate = "01012999";
 
         public BaseTest()
         {
@@ -32,26 +31,14 @@ namespace the_internet.herokuapp.com
             driver.Manage().Window.Maximize();
         }
 
-        //protected void AttachFile(By locator, string filePath)
-        //{
-        //    ClickOnElement(locator);
-
-        //    // Ждём загрузки окна для выбора файла
-        //    System.Threading.Thread.Sleep(1500);
-
-        //    // На случай, если окно свёрнуто
-        //    try
-        //    {
-        //        driver.Manage().Window.Position = new System.Drawing.Point(10, 10);
-        //    }
-        //    catch (OpenQA.Selenium.WebDriverException e)
-        //    {
-
-        //    }
-
-        //    System.Windows.Forms.SendKeys.SendWait(filePath);
-        //    System.Windows.Forms.SendKeys.SendWait("{ENTER}");
-        //}
+        public void GoToUrl(string pageUrl)
+        {
+            if (!pageUrl.StartsWith('/'))
+            {
+                pageUrl = $"/{pageUrl}";
+            }
+            driver.Navigate().GoToUrl($"{_siteUrl}{pageUrl}");
+        }
 
         public IWebElement ClickOnElement(By locator, int timeoutSeconds = 10)
         {
@@ -68,7 +55,6 @@ namespace the_internet.herokuapp.com
 
             return element;
         }
-
 
         public virtual void Dispose()
         {
