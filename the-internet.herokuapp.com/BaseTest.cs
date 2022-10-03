@@ -13,15 +13,15 @@ namespace the_internet.herokuapp.com
         internal IWebDriver driver;
 
         //Локаторы
-        //protected readonly By _signInButton = By.XPath("//a[text()='Вход']");
         protected readonly string _siteUrl = "http://the-internet.herokuapp.com";
+        //protected readonly By _signInButton = By.XPath("//a[text()='Вход']");
 
         //Константы
-        //SiteUrl = "https://testing-i.cascadepro.online:8443"
-        //internal const string _abPageUrl = "/Correspondence/Index";
+        //internal const string _PageUrl = "/Correspondence/Index";
 
-        //вынести лучше в отдельный файл
-        private const string _passInputQ = "1Qwerty!";
+        //Вынести лучше в отдельный файл
+        public const string password = "admin";
+        public const string username = "admin";
 
         public BaseTest()
         {

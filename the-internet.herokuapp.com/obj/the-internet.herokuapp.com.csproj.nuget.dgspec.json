@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\testing\\the-internet.herokuapp.com\\the-internet.herokuapp.com.csproj": {}
+    "C:\\Users\\AntonPimnev\\Source\\Repos\\testing\\the-internet.herokuapp.com\\the-internet.herokuapp.com.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\testing\\the-internet.herokuapp.com\\the-internet.herokuapp.com.csproj": {
+    "C:\\Users\\AntonPimnev\\Source\\Repos\\testing\\the-internet.herokuapp.com\\the-internet.herokuapp.com.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\testing\\the-internet.herokuapp.com\\the-internet.herokuapp.com.csproj",
+        "projectUniqueName": "C:\\Users\\AntonPimnev\\Source\\Repos\\testing\\the-internet.herokuapp.com\\the-internet.herokuapp.com.csproj",
         "projectName": "the-internet.herokuapp.com",
-        "projectPath": "C:\\Users\\User\\source\\repos\\testing\\the-internet.herokuapp.com\\the-internet.herokuapp.com.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\testing\\the-internet.herokuapp.com\\obj\\",
+        "projectPath": "C:\\Users\\AntonPimnev\\Source\\Repos\\testing\\the-internet.herokuapp.com\\the-internet.herokuapp.com.csproj",
+        "packagesPath": "C:\\Users\\AntonPimnev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AntonPimnev\\Source\\Repos\\testing\\the-internet.herokuapp.com\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\AntonPimnev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -79,7 +80,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -88,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
