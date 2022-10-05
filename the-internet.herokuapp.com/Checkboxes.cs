@@ -28,13 +28,14 @@ namespace the_internet.herokuapp.com
             Console.WriteLine(size);
 
             //доработать
-            for (int i = 0; i < elements.Count; i++)
+            for (int i = 0; i < size; i++)
             {
-                //String check_state = elements.get(i).getAttribute("checked");
-                //if (check_state == null)
-                //{
-                //    Console.WriteLine("Checbox " + (i + 1) + " is not selected");
-                //}
+                String check_state = elements.ElementAt(i).GetAttribute("checked");
+                if (check_state == null)
+                {
+                    elements.ElementAt(i).Click();
+                    Console.WriteLine("Checbox " + (i + 1) + " is not selected");
+                }
             }
         }
     }
