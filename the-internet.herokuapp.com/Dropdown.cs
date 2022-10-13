@@ -32,7 +32,8 @@ namespace the_internet.herokuapp.com
             Thread.Sleep(2000);
             ClickOnElement(_dropdownList2);
 
-            Assert.IsNotNull(_result);
+            bool result = FindElement(_result).Displayed;
+            Assert.IsTrue(result);
         }
 
     }

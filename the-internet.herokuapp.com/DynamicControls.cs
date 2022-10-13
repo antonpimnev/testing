@@ -38,7 +38,8 @@ namespace the_internet.herokuapp.com
             ClickOnElement(_dynamicControls3);
             Thread.Sleep(4000);
 
-            Assert.IsNotNull(_result1);
+            bool result1 = FindElement(_result1).Displayed;
+            Assert.IsTrue(result1);
 
             Thread.Sleep(2000);
             ClickOnElement(_dynamicControls4);
@@ -46,14 +47,16 @@ namespace the_internet.herokuapp.com
             ClickOnElement(_dynamicControls5);
             Thread.Sleep(4000);
 
-            Assert.IsNotNull(_result2);
+            bool result2 = FindElement(_result2).Displayed;
+            Assert.IsTrue(result2);
 
             FindElement(_dynamicControls5).SendKeys("Pew!pew!pew!");
             Thread.Sleep(2000);
             ClickOnElement(_dynamicControls6);
             Thread.Sleep(4000);
 
-            Assert.IsNotNull(_result3);
+            bool result3 = FindElement(_result3).Displayed;
+            Assert.IsTrue(result3);
         }
 
     }

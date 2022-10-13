@@ -56,6 +56,27 @@ namespace the_internet.herokuapp.com
             return element;
         }
 
+        //protected void AttachFile(By locator, string filePath)
+        //{
+        //    ClickOnElement(locator);
+
+        //    // Ждём загрузки окна для выбора файла
+        //    System.Threading.Thread.Sleep(1500);
+
+        //    // На случай, если окно свёрнуто
+        //    try
+        //    {
+        //        driver.Manage().Window.Position = new System.Drawing.Point(10, 10);
+        //    }
+        //    catch (OpenQA.Selenium.WebDriverException e)
+        //    {
+
+        //    }
+
+        //    System.Windows.Forms.SendKeys.SendWait(filePath);
+        //    System.Windows.Forms.SendKeys.SendWait("{ENTER}");
+        //}
+
         public virtual void Dispose()
         {
             //driver.Quit();

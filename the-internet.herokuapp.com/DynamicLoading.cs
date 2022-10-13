@@ -32,8 +32,8 @@ namespace the_internet.herokuapp.com
             Thread.Sleep(4000);
             ClickOnElement(_dynamicControls3);
             Thread.Sleep(5000);
-            bool displayedResult = driver.FindElement(_result2).Displayed;
 
+            bool displayedResult = driver.FindElement(_result2).Displayed;
             Assert.IsNotNull(_result1);
             Assert.IsTrue(displayedResult);
         }

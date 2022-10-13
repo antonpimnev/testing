@@ -33,7 +33,8 @@ namespace the_internet.herokuapp.com
                 .DragAndDrop(draggable, droppable)
                 .Perform();
 
-            Assert.IsNotNull(_result);
+            var result = FindElement(_result);
+            Assert.IsNotNull(result);
         }
 
     }

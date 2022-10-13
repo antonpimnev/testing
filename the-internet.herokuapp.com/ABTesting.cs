@@ -22,10 +22,9 @@ namespace the_internet.herokuapp.com
             By _abTestingExpected = By.XPath("//p[contains(text(),'Also known as split testing. This is a way in whic')]");
 
             ClickOnElement(_abTesting1);
-            var text = FindElement(_abTestingExpected);
-            Assert.IsNotNull(text);
+            bool result = FindElement(_abTestingExpected).Displayed;
+            Assert.IsNotNull(result);
         }
-
     }
 }
 
