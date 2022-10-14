@@ -33,9 +33,10 @@ namespace the_internet.herokuapp.com
 
             Thread.Sleep(2000);
 
-            IWebElement tracker = driver.FindElement(_horizontalSliderInput);
+            IWebElement clickable = driver.FindElement(_horizontalSliderInput);
             new Actions(driver)
-                .MoveToElement(tracker, 0, 1)
+                .ClickAndHold(clickable)
+                .MoveByOffset(-10,0)
                 .Perform();
         }
     }
