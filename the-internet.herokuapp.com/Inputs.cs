@@ -25,6 +25,9 @@ namespace the_internet.herokuapp.com
             Thread.Sleep(2000);
 
             ClickOnElement(_input).SendKeys(1 + Keys.ArrowDown + Keys.ArrowDown + ',' +9 +'e');
+            Thread.Sleep(2000);
+
+            ClickOnElement(_input).Clear();
 
             //TODO
             //WebElement result = (WebElement)driver.FindElement(_input);
