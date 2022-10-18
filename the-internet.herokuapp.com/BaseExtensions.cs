@@ -14,14 +14,6 @@ namespace the_internet.herokuapp.com
             {
                 var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutSeconds));
 
-                //-----
-                // I
-                //wait.IgnoreExceptionTypes(typeof(NoSuchElementException));
-                //var element = wait.Until(e => e.FindElement(locator));
-                //-----
-
-                //-----
-                // II
                 IWebElement element = null;
                 wait.Until(e =>
                 {

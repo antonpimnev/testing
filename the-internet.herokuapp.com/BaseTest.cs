@@ -14,7 +14,6 @@ namespace the_internet.herokuapp.com
 
         //Локаторы
         protected readonly string _siteUrl = "http://the-internet.herokuapp.com";
-        //protected readonly By _signInButton = By.XPath("//a[text()='Вход']");
 
         //Константы
         //internal const string _PageUrl = "/Correspondence/Index";
@@ -79,7 +78,7 @@ namespace the_internet.herokuapp.com
 
         public virtual void Dispose()
         {
-            //driver.Quit();
+            driver.Quit();
         }
     }
 }
