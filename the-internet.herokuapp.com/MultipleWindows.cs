@@ -18,6 +18,8 @@ namespace the_internet.herokuapp.com
         [TestMethod]
         public void MultipleWindows1()
         {
+            // https://www.selenium.dev/documentation/webdriver/interactions/windows/
+
             By _multipleWindows1 = By.XPath("//a[contains(text(),'Multiple Windows')]");
             By _multipleWindowsNew = By.XPath("//a[contains(text(),'Click Here')]");
 
@@ -26,11 +28,11 @@ namespace the_internet.herokuapp.com
 
             ClickOnElement(_multipleWindowsNew);
 
-            // https://www.selenium.dev/documentation/webdriver/interactions/windows/
-
-            string originalWindow = driver.SwitchTo();
-
-            //Assert.IsTrue(FindElement(_downloadsExcel).Displayed);
+            Thread.Sleep(2000);
+            string targetWindow = "The Internet";
+            driver.SwitchTo().Window(targetWindow); //Почему то ругается, хотя действие отрабатывает
+            
+            Assert.IsTrue(FindElement(_multipleWindowsNew).Displayed);
         }
     }
 }
