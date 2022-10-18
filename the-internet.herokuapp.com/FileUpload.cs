@@ -27,7 +27,7 @@ namespace the_internet.herokuapp.com
             ClickOnElement(_fileUpload1);
             Thread.Sleep(2000);
 
-            //AttachFile(_fileUploadOption, filePath);
+            AttachFile(_fileUploadOption, filePath);
 
             Thread.Sleep(2000);
             ClickOnElement(_fileUploadButton);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QHXfWx69OWzJ+S1VB/hBtKwDiWXJ6GpiCAkVNL/5ojbgzpKpoooiVC+Gn1yVgBYoHxvZbw19deA+hH6kmDoIeg==",
+  "dgSpecHash": "lo41QM55dQo97mBfbBCysO7/FYCjMJ2qZUrRVNoty5bEgBj5g0f4D2pv0wqGOHLXhtcV4M3h6EWwMldA69OWAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Source\\Repos\\testing\\the-internet.herokuapp.com\\the-internet.herokuapp.com.csproj",
+  "projectFilePath": "C:\\Users\\User\\source\\repos\\testing\\the-internet.herokuapp.com\\the-internet.herokuapp.com.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

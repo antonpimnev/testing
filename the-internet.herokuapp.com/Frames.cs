@@ -27,10 +27,10 @@ namespace the_internet.herokuapp.com
             ClickOnElement(_frames2);
             Thread.Sleep(2000);
 
-            //IWebElement iframe = driver.FindElement(By.Name("frame-left"));
-            //driver.SwitchTo().Frame(FindElement(_frames3));
-            driver.SwitchTo().ParentFrame();
-            driver.SwitchTo().Frame(FindElement(By.CssSelector("[name = 'frame-left']")));
+            driver.SwitchTo().Frame(1);
+            var result = driver.FindElement(_frames3);
+
+            //driver.FindElement();
         }
     }
 }

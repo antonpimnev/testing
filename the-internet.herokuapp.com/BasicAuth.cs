@@ -23,14 +23,14 @@ namespace the_internet.herokuapp.com
         [TestMethod]
         public void BasicAuth1()
         {
-            By _textCongrats = By.XPath("//p[contains(text(),'Congratulations! You must have the proper credentials')]");
+            By _textCongrats = By.XPath("//p[contains(text(),'Congratulations! You must have the proper credentials.')]");
 
             Thread.Sleep(2000);
             handleAuth();
             //driver.SwitchTo().Alert().SendKeys(username + Keys.Tab + password + Keys.Tab + Keys.Enter);
             Thread.Sleep(5000);
             var textCongrats = FindElement(_textCongrats).Text;
-            String expected = "Congratulations! You must have the proper credentials";
+            String expected = "Congratulations! You must have the proper credentials.";
             Assert.AreEqual(expected, textCongrats.Trim());
         }
     }
